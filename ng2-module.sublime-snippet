@@ -11,7 +11,7 @@ const moduleConfig = {
 };
 
 @NgModule(moduleConfig)
-export class ${1:Name}Module {${3:classCode}}
+export class ${1:Name}Module {}
 
 ]]></content>
       <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
