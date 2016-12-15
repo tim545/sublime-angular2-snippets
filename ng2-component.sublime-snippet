@@ -15,7 +15,6 @@ const componentConfig = {
 export class ${3:ComponentName}Component implements OnInit {
 	constructor() {}
 	ngOnInit() {}
-	${4}
 }
 
 ]]></content>
