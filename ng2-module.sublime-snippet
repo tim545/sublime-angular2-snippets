@@ -4,10 +4,10 @@ import {NgModule} from '@angular/core';
 import {${1:Name}Component} from './${2:name}.component';
 
 const moduleConfig = {
-      imports: [],
-      exports: [],
-      declarations: [${1:Name}Component],
-      providers: [],
+  imports: [],
+  exports: [],
+  declarations: [${1:Name}Component],
+  providers: [],
 };
 
 @NgModule(moduleConfig)
