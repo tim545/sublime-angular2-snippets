@@ -1,13 +1,13 @@
 <snippet>
       <content><![CDATA[
-import { NgModule } from '@angular/core';
-import { BrowserModule  } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {HttpModule} from '@angular/http';
 
-import { ${1:App}Component } from './${2:app}.component';
-import { routing } from './${2:app}.routing'; //TODO: Create ${2:app}.routing, 
+import {${1:App}Component} from './${2:app}.component';
+import {routing} from './${2:app}.routing'; //TODO: Create ${2:app}.routing
 
-@NgModule({
+const moduleConfig = {
   imports: [
     BrowserModule,
     HttpModule,
@@ -16,8 +16,11 @@ import { routing } from './${2:app}.routing'; //TODO: Create ${2:app}.routing,
   declarations: [${1:App}Component],
   providers: [/* TODO: Providers go here */],
   bootstrap: [${1:App}Component],
-}),
-export class ${1:App}Module { }
+};
+
+@NgModule(moduleConfig),
+export class ${1:App}Module {}
+
 ]]></content>
       <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
       <tabTrigger>ng2-module-root</tabTrigger>

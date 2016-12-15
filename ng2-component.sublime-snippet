@@ -1,19 +1,23 @@
 <snippet>
 	<content><![CDATA[
-import { Component, OnInit } from '@angular/core';
-      
-@Component({
-	moduleId: module.id,
+import {Component, OnInit} from '@angular/core';
+
+const template = ``;
+const styles = [``];
+
+const componentConfig = {
 	selector: '${1:selector}',
-	templateUrl: '${1:selector}.component.html'
-})
+	template,
+	styles
+};
+
+@Component(componentConfig)
 export class ${3:ComponentName}Component implements OnInit {
-	constructor() { }
-
-	ngOnInit() { }
-
+	constructor() {}
+	ngOnInit() {}
 	${4}
 }
+
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ng2-component</tabTrigger>

@@ -1,15 +1,18 @@
 <snippet>
       <content><![CDATA[
-import { NgModule } from '@angular/core';
-import { ${1:Name}Component }   from './${2:name}.component';
+import {NgModule} from '@angular/core';
+import {${1:Name}Component} from './${2:name}.component';
 
-@NgModule({
+const moduleConfig = {
       imports: [],
       exports: [],
       declarations: [${1:Name}Component],
       providers: [],
-})
-export class ${1:Name}Module { ${3:classCode} }
+};
+
+@NgModule(moduleConfig)
+export class ${1:Name}Module {${3:classCode}}
+
 ]]></content>
       <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
       <tabTrigger>ng2-module</tabTrigger>
