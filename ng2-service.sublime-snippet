@@ -4,7 +4,6 @@ import {Injectable} from '@angular/core';
 
 @Injectable()
 export class ${1:ServiceName}Service {
-	${2}
 	constructor() {}
 }
 
