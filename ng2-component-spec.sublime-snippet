@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+import {TestBed, ComponentFixture} from '@angular/core/testing';
+
+import {${1:Name}Component} from './name.component';
+
+let fixture: ComponentFixture<NameComponent>;
+let comp: NameComponent;
+
+describe('Dashboard component', () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [],
+      declarations: [NameComponent],
+      providers: []
+    });
+
+    fixture = TestBed.createComponent(NameComponent);
+    comp = fixture.componentInstance;
+  });
+
+  it('should work', () => {
+    expect(fixture.componentInstance instanceof NameComponent).toBe(true, 'should create NameComponent');
+  });
+});
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ng2-component-spec</tabTrigger>
+  <description>Angular 2 component spec snippet</description>
+</snippet>
